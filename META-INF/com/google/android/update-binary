@@ -1,0 +1,14 @@
+#!/sbin/sh
+# Magisk 兼容入口；KernelSU 直接读 module.prop，不执行本文件
+umask 022
+OUTFD=$2
+ZIPFILE=$3
+
+mount /data 2>/dev/null
+if [ ! -f /data/adb/magisk/util_functions.sh ]; then
+    echo "! 未检测到 Magisk 环境，请使用 KernelSU 管理器安装本模块"
+    exit 1
+fi
+. /data/adb/magisk/util_functions.sh
+install_module
+exit 0

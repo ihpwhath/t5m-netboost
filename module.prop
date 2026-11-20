@@ -1,0 +1,6 @@
+id=t5m_netboost
+name=T5M终极网络优化
+version=v2.4.1
+versionCode=12
+author=ks轨迹
+description=REDMI Turbo 5 Max (mt6991 / Android 17 / HyperOS V816) 专用网络工具，实测驱动而非玄学。控制台查看 Band/带宽/RSRP/SINR/基带温度、趋势图（含基带温度曲线）、流量与速率统计、网络事件账本、测速历史、链路质量（真实重传率）、掉线守护、IPv6/NAT64/HTTP 三通道体检、一键诊断报告。v2.4.1：修复控制台「生成报告」点了没反应——诊断报告提速 4.5 倍（status 2.36s→0.53s）、报告自动落盘到 Download 并给出文件名、TCP 重传率段落不再被吞、新增 report fast 快速模式、执行期间暂停轮询避免抢主线程。v2.4：新增流量计量（今日/本月，处理重连计数器清零）、事件账本（掉线/重连/高温推迟全记录，投诉有据）、测速历史、一键报告、TCP keepalive 三件套防 NAT 静默回收长连接、守护 WiFi 防呆（连 WiFi 不再误操作蜂窝）、基带温度进趋势图。运营商侧限速无法本地解除，本模块只消除终端瓶颈。
